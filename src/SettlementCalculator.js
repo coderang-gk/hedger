@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 
 const SettlementCalculator = () => {
   const [users, setUsers] = useState([
@@ -113,6 +114,7 @@ const SettlementCalculator = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-md">
+      <Analytics />
       <h1 className="text-2xl font-bold mb-6 text-center">IPL Hedging Settlement Calculator</h1>
       
       <div className="mb-8 bg-white p-4 rounded-md shadow">
@@ -297,5 +299,4 @@ const SettlementCalculator = () => {
     </div>
   );
 };
-
 export default SettlementCalculator;
