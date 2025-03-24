@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const SettlementCalculator = () => {
   const [users, setUsers] = useState([
-    { id: 1, name: 'User 1', amountInvested: 1176, amountWon: 137 },
-    { id: 2, name: 'User 2', amountInvested: 1025, amountWon: 2000 }
+    { id: 1, name: 'User 1', amountInvested: 0, amountWon: 0 },
+    { id: 2, name: 'User 2', amountInvested: 0, amountWon: 0 }
   ]);
   
   const [newUser, setNewUser] = useState({
